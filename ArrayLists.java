@@ -28,9 +28,17 @@ public class ArrayLists {
 
         employeeList.set(2, new Employee("newWilliam", "newcooper", 44));
 
-        employeeList.forEach(employee -> System.out.println(employee));
 
+
+        employeeList.add(1, new Employee("Kit", "Xav", 55));
 //        System.out.println(employeeList.get(2));
+
+//        employeeList.forEach(employee -> System.out.println(employee));
+
+        Employee[] employeeArray = employeeList.toArray(new Employee[employeeList.size()]);
+        for(Employee employee :employeeArray){
+            System.out.println(employee);
+        }
 
     }
 }
