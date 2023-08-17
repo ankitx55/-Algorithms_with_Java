@@ -9,7 +9,7 @@ public class fibonacci_series {
 //    similarly, t(n) = t(n-1) + t(n-2)
 
     public static void main(String[] args) {
-        int n = 7;
+        int n = 5;
         System.out.println(fib_series(n));
     }
     static int fib_series(int n){
